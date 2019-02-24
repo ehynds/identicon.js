@@ -18,6 +18,8 @@
         PNGlib = window.PNGlib;
     }
 
+    var Buffer = require('buffer').Buffer;
+
     var Identicon = function(hash, options){
         if (typeof(hash) !== 'string' || hash.length < 15) {
             throw 'A hash of at least 15 characters is required.';
